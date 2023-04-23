@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    top: 0;
+    left: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#main-box{
+    /* border: 1px solid black; */
+    
+}
+#heading{
+    /* border: 1px solid greenyellow; */
+    text-align: center;
+    
+}
+#image{
+    /* border: 1px solid red; */
+    margin-left: 4em;
+    margin-right: 4em;
+}
+#image img{
+    height: 50vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#first-section{
+    display: flex;
+    /* border: 1px solid blue; */
+    justify-content: space-between;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+.sub-section{
+    /* border: 1px solid indigo; */
+    
+}
+.first{
+    margin: 0em;
+    width: 20%;
+}
+.second{
+    margin: 0em;
+    width: 45%;
+}
+.third{
+    background-color: rgb(16, 7, 4);
+    color: white;
+    /* width:60em; */
+    width: 20%;
+    margin: em;
+    padding: 1em;
+}
+#second-section{
+    display: flex;
+    /* border: 1px solid rgb(0, 87, 10); */
+    margin-left: 4em;
+    margin-right: 4em;
+    justify-content: space-between;
+}
+.bottom{
+    margin-right: em;
+    width: 70%;
+}    
+/* from the min-width of 600px to 999px the background-color is violet */
+/* @media (min-width:600px) and (max-width:999px) {
+    body{
+        background-color: violet;
+    }
+}
+/* from min-width of 1000px till infinity the background-color is yellowgreen*/
+/* @media (min-width:1000px){
+    body{
+        background-color: yellowgreen;
+    }
+}  */
+
+@media (max-width:600px)
+{
+    #second-section{
+        flex-direction: column;
+    }
+    .bottom{
+        width: 100%;
+    }
+    .first,.second{
+        width: 100%;
+
+    }
+    .third{
+        width: fit-content;
+    }
+    #first-section{
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+        /* height: ; */
+    }
+}
